@@ -21,5 +21,14 @@ namespace NUnitTestProject1
             int actual = checkMaxOfThree.MaximumOfThree(Numb1, Numb2, Numb3);
             Assert.AreEqual(expected, actual);
         }
+        [TestCase(10.5, 20.6, 30.8)]
+        [TestCase(5.24, 30.8, 9)]
+        [TestCase(5.44, 9.9, 30.8)]
+        public void GivenThreeDoubleNumbersShouldReturnMaximumDoubleNumber(double Numb1, double Numb2, double Numb3)
+        {
+            double expected = 30.8;
+            double actual = checkMaxOfThree.MaximumFloatNumber(Numb1, Numb2, Numb3);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
