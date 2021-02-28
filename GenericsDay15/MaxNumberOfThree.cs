@@ -23,7 +23,14 @@ namespace GenericsDay15
         {
             this.arrayNew = arrayNew;
         }
-            public T MaximumOfThree(T Num1, T Num2, T Num3)
+        /// <summary>
+        /// Maximums the of three.
+        /// </summary>
+        /// <param name="Num1">The num1.</param>
+        /// <param name="Num2">The num2.</param>
+        /// <param name="Num3">The num3.</param>
+        /// <returns></returns>
+        public T MaximumOfThree(T Num1, T Num2, T Num3)
             {
                 if (Num1.CompareTo(Num2) > 0 && Num1.CompareTo(Num3) > 0 ||
                    Num1.CompareTo(Num2) >= 0 && Num1.CompareTo(Num3) > 0 ||
@@ -47,11 +54,18 @@ namespace GenericsDay15
                     return default;
                 }
             }
+        /// <summary>
+        /// Maximums the array.
+        /// </summary>
+        /// <returns></returns>
         public T MaxArray()
         {
             Array.Sort(arrayNew);
             return (arrayNew[arrayNew.Length-1]); 
-        }
+        }/// <summary>
+        /// Max Value Method 
+        /// </summary>
+        /// <returns></returns>
             public T MaxValue()
             {
                 var Max = MaximumOfThree(this.Num1, this.Num2, this.Num3);
